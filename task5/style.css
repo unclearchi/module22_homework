@@ -1,0 +1,76 @@
+section{
+    width: 80vw;
+    margin:auto;
+  }
+  .btn {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: none;
+    cursor: pointer;
+    
+    margin: 5px 10px;
+    padding: 10px 15px;
+    border-radius: 1px;
+    font-size: 12px;
+    line-height: 15px;
+    color: black;
+    font-size: 1em;
+    background: #bad7ec;
+    border: 1px solid transparent;
+  }
+  
+  .btn:hover {
+    color: red;
+    border: 1px solid black;
+  }
+  .j-btn-close{
+    display: none;
+  }
+  input[type=text]#userMessage{
+    font-size: 1.05em;
+    width: 19em;
+    border: 3px solid #bad7ec;
+    padding: .3em .6em;
+  }
+  div#output{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 80vw;
+    border: 3px solid #bad7ec;
+    overflow-y: scroll;  /* for long disputes with the echo server :) */
+  }
+  div.userMessage, div.responderMessage{
+    position: relative;
+    width: 99%;
+  }
+  div.userMessage{
+    text-align: right;
+  }
+  div.responderMessage{
+    text-align: left;
+  }
+  div.systemMessage,div.errorMessage{
+    text-align: center;
+    width: 99%;
+  }
+  div.systemMessage>p,div.errorMessage>p{
+    text-transform: uppercase;
+    font-size: x-small;
+  }
+  div.systemMessage>p{
+    color: grey;
+  }
+  div.errorMessage>p{
+    color: red;
+  }
+  div.userMessage>p, div.responderMessage>p{
+    display: inline-block;
+    border: 3px solid #bad7ec;
+    border-radius: .5em;
+    padding: .2em .5em;
+    margin: .2em;
+  }
